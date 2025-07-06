@@ -1,10 +1,11 @@
 import React from 'react'
 import { ArrowForward, GitHub, LinkedIn, } from '@mui/icons-material'
 import { AnimatePresence, motion } from 'framer-motion'
+import Image from 'next/image'
 
 function Head() {
 
-    const text = "I'm Yogesh  Jangir"
+    const text = "I am Yogesh  Jangir"
     const textVarient = {
         hidden: { opacity: 1 },
         visible: {
@@ -43,10 +44,10 @@ function Head() {
             <div className=' w-full mb-16 relative z-10 '>
                 <div className=' py-10 sm:py-[200px] px-[30px]  md:px-40 lg:p '>
                     <motion.span className=' text-[#B08FCD] my-5 text-xl '
-                    initial={{ opacity: 0, }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: 0.2 }}
+                        initial={{ opacity: 0, }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
                     >
                         Hello Everyone.
                     </motion.span>
@@ -66,33 +67,33 @@ function Head() {
                     </motion.h1>
 
                     <motion.div className=' border-2 inline-flex   border-[#D29EFD] my-5'
-                    initial={{ opacity: 0,x:-100 }}
-                    whileInView={{ opacity: 1,x:0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 1, delay: 0.5 }}
-                    > 
-                    <h2 className='text-[#fff] px-2 py-1'>MERN STACK DEVELOPOER</h2> 
-                    <span className=' bg-[#D29EFD] text-[#1D242D] grid place-items-center px-3 font-extrabold  '> <ArrowForward /></span>
+                        initial={{ opacity: 0, x: -100 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1, delay: 0.5 }}
+                    >
+                        <h2 className='text-[#fff] px-2 py-1'>MERN STACK DEVELOPOER</h2>
+                        <span className=' bg-[#D29EFD] text-[#1D242D] grid place-items-center px-3 font-extrabold  '> <ArrowForward /></span>
                     </motion.div>
-<br />
+                    <br />
 
                     <a className=' inline-block ' target='_blank' href="https://drive.google.com/file/d/1KpDP1IUIizrxa6rilmb3ScfjKkaFgVT9/view">
-                    <motion.div className=' border-2 inline-flex   border-[#D29EFD] my-5'
-                    initial={{ opacity: 0,x:-100 }}
-                    whileInView={{ opacity: 1,x:0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 1, delay: 0.5 }}
-                    > 
-                    <h2 className='text-[#fff] px-2 py-1'>RESUME</h2> 
-                    <span className=' bg-[#D29EFD] text-[#1D242D] grid place-items-center px-3 font-extrabold  '> <ArrowForward /></span>
-                    </motion.div>
+                        <motion.div className=' border-2 inline-flex   border-[#D29EFD] my-5'
+                            initial={{ opacity: 0, x: -100 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 1, delay: 0.5 }}
+                        >
+                            <h2 className='text-[#fff] px-2 py-1'>RESUME</h2>
+                            <span className=' bg-[#D29EFD] text-[#1D242D] grid place-items-center px-3 font-extrabold  '> <ArrowForward /></span>
+                        </motion.div>
                     </a>
 
                     <motion.div className=' my-5 flex gap-5 text-[#fff] '
-                     initial={{ opacity: 0,x:-50 }}
-                whileInView={{ opacity: 1 ,x:0}}
-                transition={{ duration: 0.6 ,delay:0.5}}
-                viewport={{ once: true }}
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6, delay: 0.5 }}
+                        viewport={{ once: true }}
 
                     >
                         <a href=""><GitHub className='text-4xl' /></a>
@@ -100,15 +101,15 @@ function Head() {
                     </motion.div>
 
                     <motion.p className=' text-white'
-                     initial={{ opacity: 0,y:20 }}
-                whileInView={{ opacity: 1,y:0 }}
-                transition={{ duration: 0.5,delay:0.5 }}
-                viewport={{ once: true }}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: 0.5 }}
+                        viewport={{ once: true }}
 
                     >
-                        I’m a passionate MERN STACK DEVELOPOER  dedicated to building clean, user-focused digital experiences.
+                        I&apos;m a passionate MERN STACK DEVELOPER dedicated to building clean, user-focused digital experiences.
                         With a keen eye for detail and a love for solving problems, I craft solutions that are not only functional but also beautifully designed.
-                        Let's bring your ideas to life together!
+                        Let&apos;s bring your ideas to life together!
                     </motion.p>
                 </div>
             </div>
@@ -123,7 +124,8 @@ function Head() {
                     <div className=' w-full flex justify-center p-5 '>
                         <div className=' relative w-full aspect-square sm:w-[400px] sm:h-[400px] grid place-items-center rounded-full     '>
                             <div className=' relative rounded-full z-10'>
-                                <img className=' rounded-full' src="https://res.cloudinary.com/diwgq9ndi/image/upload/v1751778938/photo_2025-07-06_10-45-07_yp5hnl.jpg" alt="" />
+                                <Image className=' rounded-full' src="https://res.cloudinary.com/diwgq9ndi/image/upload/v1751778938/photo_2025-07-06_10-45-07_yp5hnl.jpg"  width={400}
+  height={400} alt="" />
                             </div>
                             <motion.div className=' absolute z-20  md:w-[130px] md:h-[130px] w-[100px] h-[100px] bg-gradient-to-bl from-[#D29EFD] to-[#F6F2BE] rounded-full grid place-items-center bottom-0 left-[0] md:left-[-30px]'
                                 initial={{ opacity: 0, }}
