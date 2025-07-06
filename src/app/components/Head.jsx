@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 function Head() {
 
-    const text = "I am Yogesh  Jangir"
+    const text = "I\'m Yogesh  Jangir"
     const textVarient = {
         hidden: { opacity: 1 },
         visible: {

@@ -15,8 +15,8 @@ function About() {
                 >
                     <div className=' relative w-full aspect-square sm:w-[400px] sm:h-[400px] grid place-items-center rounded-full  p-5 border-[#A5FDB3] border-2 '>
                         <div className=' relative rounded-full z-10'>
-                            <Image className=' rounded-full' src="https://res.cloudinary.com/diwgq9ndi/image/upload/v1751778936/photo_2025-07-06_10-45-10_gnrpql.jpg"  width={400}
-  height={400} alt="" />
+                            <Image className=' rounded-full' src="https://res.cloudinary.com/diwgq9ndi/image/upload/v1751778936/photo_2025-07-06_10-45-10_gnrpql.jpg" width={400}
+                                height={400} alt="" />
                         </div>
                         <div className='z-0 absolute w-[150px] h-[150px] bg-gradient-to-bl from-[#A6FEB3] to-[#B6D2FC] rounded-full grid place-items-center top-[0] right-[0]'> <div className=' w-[100px] h-[100px] bg-[#1D242D] rounded-full'></div> </div>
                         <div className=' z-20 absolute w-[100px] h-[100px] bg-gradient-to-bl from-[#A6FEB3] to-[#B6D2FC] rounded-full grid place-items-center bottom-0 left-[0]'> <div className=' w-[80px] h-[80px] bg-[#1D242D] rounded-full'></div> </div>
@@ -39,7 +39,7 @@ function About() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 1, delay: 0.1 }}
-                        > Hello! I&apos;m Yogesh Jangir, a passionate MERN stack developer   .
+                        > Hello! I&apos;m Yogesh Jangir, a passionate MERN stack developer.
                             I specialize in building responsive, scalable web applications using MongoDB, Express.js, React, and Node.js.
                             I thrive on creating clean, user-focused digital experiences and love solving complex problems with elegant code.</motion.p>
                     </div>
