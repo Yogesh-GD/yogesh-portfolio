@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        body{
+            background: #ffffff;
+        }
+        div{
+            padding: 5px;
+            color: #000000;
+        }
+        .card{
+            max-width:  500px;
+            border-radius: 10px;
+            background-color: #292929;
+            color: #fff;
+            
+        }
+        h1{
+            color: #000000;
+        }
+        h2{
+            padding: 5px 0;
+        }
+        p{
+            color: #ffffff;
+            padding: 5px 2px 5px 2px;
+        }
+    </style>
+</head>
+<body>
+   <div>
+    <h1>Hey, There is someone want to contact you ....</h1>
+
+    <h2>Name: <span> {name} </span></h2>
+    <h2>Email: <span> {email} </span></h2>
+
+    <div class="card">
+        <h2>Message:</h2>
+        <p> {message} </p>
+    </div>
+   </div>
+    
+</body>
+</html>
