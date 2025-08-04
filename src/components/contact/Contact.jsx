@@ -126,7 +126,7 @@ const Contact = () => {
                             </g>
                         </svg>
                     </div>
-                    <motion.div className="relative bg-[#1E1E1E] p-8 opacity-0"
+                    <motion.div className="relative aspect-square bg-[#1E1E1E] p-8 opacity-0"
                         whileInView={{ opacity: 1 }}
                         transition={{ delay: 3, duration: 1 }} viewport={{ once: true }}
                     >
