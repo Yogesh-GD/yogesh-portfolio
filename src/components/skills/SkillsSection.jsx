@@ -43,7 +43,7 @@ const RotatingCard = ({ index, total, progress, skill }) => {
     return (
         <motion.div
             style={{ x, y, opacity, scale }}
-            className="absolute w-10/12 sm:w-[300px] md:w-[500px] aspect-square bg-[#131313] text-white rounded-xl shadow-md p-4 text-center"
+            className="absolute w-10/12 sm:w-[250px] md:w-[400px] aspect-square bg-[#131313] text-white rounded-xl shadow-md p-4 text-center"
         >
             <h4 className="font-semibold text-4xl ">{skill.title}</h4>
             <div className=" flex flex-wrap justify-center  gap-5">
