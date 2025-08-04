@@ -6,23 +6,19 @@ import { useRef } from "react";
 const skills = [
     {
         title: "Frontend",
-        description: "React, Next.js, Tailwind, TypeScript, HTML/CSS",
+        description: "React, Next.js, Tailwind, Bootstrap, Redux Toolkit, HTML/CSS",
     },
     {
         title: "Backend",
-        description: "Node.js, Express, MongoDB, REST APIs",
+        description: " JavaScript, Node.js, Express, MongoDB, SQL, REST APIs",
     },
     {
-        title: "DevOps",
-        description: "GitHub Actions, Vercel, Netlify, CI/CD",
-    },
-    {
-        title: "UI/UX",
-        description: "Figma, Framer Motion, Responsive Design",
+        title: "Other",
+        description: "Python, Numpy, Pandas, Matplotlib, PostgreSQL, Excel",
     },
     {
         title: "Tools",
-        description: "Git, VSCode, Postman, Chrome DevTools",
+        description: "Git, GitHub, VSCode, Postman",
     },
 ];
 

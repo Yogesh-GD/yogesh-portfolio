@@ -18,23 +18,8 @@ const Portfolio = () => {
             <h1 className="text-[70px] md:text-[80px] lg:text-[130px] xl:text-[200px] w-full h-[50vh]  grid place-items-center font-extrabold text-white mix-blend-screen">
                 <div className="flex">
                     {text.split("").map((char, index) => {
-                        const start = 0 + index * 0.03; 
-                        const end = 0.5 + index * 0.03;
-
-                        const y = useTransform(
-                            scrollYProgress,
-                            [start, end],
-                            [500, 0]
-                        );
-
                         return (
-                            <motion.span
-                                style={{ y }}
-                                key={index}
-                                className="inline-block"
-                            >
-                                {char}
-                            </motion.span>
+                            <CharAnimate char={char} scrollYProgress={scrollYProgress} index={index} key={index} />
                         );
                     })}
                 </div>
@@ -44,3 +29,25 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
+
+const CharAnimate = ({ char, index,scrollYProgress }) => {
+    const start = 0 + index * 0.03;
+    const end = 0.5 + index * 0.03;
+
+    const y = useTransform(
+        scrollYProgress,
+        [start, end],
+        [500, 0]
+    );
+
+    return (
+        <motion.span
+            style={{ y }}
+            key={index}
+            className="inline-block"
+        >
+            {char}
+        </motion.span>
+    );
+}
